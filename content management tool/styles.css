@@ -1,0 +1,270 @@
+*{
+    margin: 10;
+    padding: 20;
+    box-sizing: border-box;
+}
+body{
+    /* background-image: url("images.jpeg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    font-family: "Times new Roman";
+    background-color:rgb(244, 242, 222);
+  }
+  header img
+{
+    padding: 10vw;
+    align-items: center;
+    padding-top: 20vw;
+    padding-inline-start: 10vw;
+}
+header h1 
+{ 
+    
+    text-align: center;
+    font-size: 40px;
+    color: rgb(14, 11, 11);
+    font-style: italic;
+  
+}
+header h5
+{
+    text-align: center;
+    color: rgb(14, 11, 11);
+}
+
+header 
+{
+    
+    background-position: 100vw;
+    height: auto;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    background-attachment: fixed;
+    background-size: auto;
+   
+}
+.parallax {
+    /* The image used */
+    /* background-image: url('images.png'); */
+    background-color: rgb(199, 223, 239)e;
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Turn off parallax scrolling for tablets and phones. 
+  Increase the pixels if needed */
+  @media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
+  .container{
+    background-image: url(download.jpeg); 
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 15px;
+    width: auto;
+    background-color: lightskyblue;
+    padding: 0px 15px 10px 15px;
+    border: 2px solid rgb(8, 129, 58);
+    border-radius: 10px 10px;
+    box-shadow: 5px 5px 15px 5px black;
+}
+#logo{
+  margin: 4px 8px;
+}
+#logo img{
+  height: 60px;
+  width: 60px;
+  margin: 1px 9px;
+  border-radius: 30px;
+  transition: all 0.2s ;
+}
+#logo img:hover{
+  transform: scale(1.2);
+}
+#navbar 
+ {
+    height: auto;
+    width: 100vw;
+    /* background-image: linear-gradient(to right #15a2bb , #207ace); */
+    overflow: hidden; 
+    min-width: 600px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0vw auto;
+
+}
+ #navbar  a{
+
+    position: relative;
+    text-decoration: none;
+    font-family: 'poppins','Times New Roman';
+    /* color: #2cff56;  */
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+} 
+#navbar{
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 0px;
+  justify-content: flex-start;
+}
+#navbar::before{
+  content: "";
+  background-color:rgba(21, 125, 230, 0.95) ;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0.4;
+  z-index: -1;
+
+
+}
+ #navbar a:after {
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 10px;
+    transition: 0.3s;
+} 
+#navbar a:hover
+{
+    color: #ffffff;
+}
+#navbar a:hover:after{
+    width: 100%;
+}
+#navbar a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    /* float: left; */
+    color: rgb(0 0 0);
+}
+#content1{
+  display: flex;
+  
+  font-weight: bold;
+
+}
+
+
+
+
+    /* CSS is used for styling  content management tool */
+.contentresource{
+  display: flex;
+}
+
+    .editor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+  
+      .editor input[type="text"],
+      .editor textarea {
+        margin-bottom: 10px;
+        width: 300px;
+        padding: 5px;
+      }
+  
+      .editor button {
+        padding: 5px 10px;
+        background-color: rgb(129, 87, 226);
+        color: rgb(14, 11, 11);
+        border: none;
+        cursor: pointer;
+      }
+  
+      .preview {
+        margin-top: 20px;
+      }
+
+      .blog-post {
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    .image{
+      height: 38%;
+      width: 38%;
+    } 
+
+
+
+    /* contact section  */
+
+.contentresource{
+  display: flex;
+  justify-content: space-around;
+}    
+#contact{
+  position: relative;
+}
+#contact::before{
+  content: "";
+  position: absolute;
+  background:url(../images/contactus.jpg) no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.6;
+  
+}
+
+#contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px ;
+                                         
+}
+#contact-box input,
+#contact-box textarea{
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
+#contact-box form{
+  width: 40%;
+}
+#contact-box label{
+  font-size: 1.3rem;
+}
+
+
+/* footer  */
+footer{
+  background-color: black;
+  color: white;
+  padding: 9px 20px;
+  text-align: center;
+}
+
+
+
+      
